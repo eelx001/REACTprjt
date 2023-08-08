@@ -7,60 +7,104 @@ body, html {
   padding: 0;
   margin: 0;
   overscroll-behavior: none;
-  overflow: hidden;
-  background:rgb(253, 253, 253);
+  background:rgb(0, 0, 0);
+}
+.cards{
+  width: 228px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  border: 1px solid #0000005d;
+  text-align: -webkit-center;
+}
+.cont{
+  padding-top: 10%;
 }
 
-.slider {
-  position: fixed;
-  bottom: 5%;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Adjust spacing between cards */
+  margin: 0px; /* Negative margin to counteract outer spacing */
+  justify-content:center;
+  text-align: center;
+}
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  align-items:center;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+.card {
+  flex: 1;
+  max-width: calc(33.33% - 20px); /* Adjust card width for responsiveness */
+  box-sizing: border-box;
+  margin: 10px;
+  
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: calc(50% - 20px); /* Adjust card width for smaller screens */
+  }
+}
+
+
+
+.Carous {
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
-  color: white;
-  font-family: sans-serif;
-  text-align: right;
+  border-radius: 0 !important;
+  
 }
 
-.slider input {
-  width: 100%;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-/* body {
-  background-color: #111111;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .1;
-  visibility: visible;
-}
-
-@keyframes bg-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
-} */
 .tysm {
   background: rgb(218, 92, 92) !important;
   width: 100%;
@@ -89,7 +133,7 @@ button,a{
   }
 
 button{
-  background-color: #CB6CE6 !important;
+  background-color: #ffffff00;
 }
 .dark:bg-gray-900{
   box-shadow: 0px 13px 25px #CB6CE6;
@@ -153,15 +197,18 @@ h1{
   color: #000;
 }
 .navba{
-background: #45484d; /* Old browsers */
-background: -moz-linear-gradient(360deg,  #202020 0%, #000000 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(360deg,  #242424 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(360deg,  #1b1b1b 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.808) !important; 
-border:none !important;
-color:white;
-}
+  background: -moz-linear-gradient(360deg,  #1b1b1b4d 0%, #00000087 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(360deg,  #1b1b1b4d 0%,#00000087 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(360deg,  #1b1b1b4d 0%,#00000087 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.808) !important; 
+  border:none !important;
+  color:white !important;
+  backdrop-filter: blur(7px);
+  border-radius:25px;
+  margin: 14px 0px 0px 0px;
+
+  }
 .md\:dark\:text-blue-500{
   color:#ffd105 !important;
   background: #00000000 !important;

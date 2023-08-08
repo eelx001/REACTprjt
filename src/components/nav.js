@@ -42,7 +42,7 @@ function Nav() {
             <button
               ref={dropdownRef}
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm text-white-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded={isOpen}
               onClick={() => setIsOpen(!isOpen)}
@@ -70,7 +70,7 @@ function Nav() {
               <button type="button" className="btndrop bndp" onClick={() => {
                 handleClick();
                 hideDropdown();
-              }}>Login</button>
+              }}>Contact me</button>
             </ul>
           </div>
         </div>
