@@ -97,13 +97,6 @@ body, html {
 
 
 
-.Carous {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0 !important;
-  
-}
 
 .tysm {
   background: rgb(218, 92, 92) !important;
@@ -366,39 +359,7 @@ input{
   }   
 }
 
-.dark-mode {
-  background-color: #1a202c;
-  color: #fff;
-}
 
-.dark-mode .nav-link {
-  color: #fff;
-}
-
-.sidebar{
-    margin-top: 1000px;
-}
-.sidebar-animation-enter {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  
-  .sidebar-animation-enter-active {
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-  }
-  
-  .sidebar-animation-exit {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  
-  .sidebar-animation-exit-active {
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-  }
   
 
 

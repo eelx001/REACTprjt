@@ -8,12 +8,12 @@ function App() {
   return (
         <div className="App" >
         <Nav/>
+        
         <Routes>
         <Route path="*" element={<Navigate to="/home" />} />
         <Route path="/home"  Component={Page1}/>
-        <Route path="/page2"  Component={Page2}/>
-        <Route path="/page3"  Component={Page3}/>
-        <Route path="/dashboard"  Component={""}/>
+        <Route path="/project"  Component={Page2}/>
+        <Route path="/alt"  Component={Page3}/>
         </Routes>
         
     </div>

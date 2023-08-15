@@ -3,6 +3,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Logo from './logo.png'
 import React, { useState, useEffect, useRef } from 'react';
 import { Label, Modal, TextInput, Checkbox, Button,Spinner, Navbar, Textarea } from 'flowbite-react';
+import {motion} from 'framer-motion'
+import {BsWhatsapp,BsLinkedin,BsInstagram} from 'react-icons/bs'
+
+
+
 
 function Nav() {
   const [showModal, setShowModal] = useState(false);
@@ -32,9 +37,12 @@ function Nav() {
         
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
    
-          <a as={Link} className="flex items-center">
-            <img src={Logo} className="h-12 mr-3" alt="Spotify" />
-          </a>
+          <Link to="/home" className="flex items-center">
+            <motion.img    
+            
+            
+            src={Logo} className="h-12 mr-3" alt="Spotify" />
+          </Link>
           <div className="flex md:order-2">
          
           <button type="button" className="bn3637 bn37 no-outline" onClick={handleClick}>Contact Me</button>
@@ -59,13 +67,13 @@ function Nav() {
                 <Link to="/home" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Accueil</Link>
               </li>
               <li>
-                <Link to="/page1" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</Link>
+                <Link to="/project" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/page2" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Moi</Link>
-              </li>
+              </li> */}
               <li>
-                <Link to="/page3" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
+                <Link to="/alt" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
               </li>             
               <button type="button" className="btndrop bndp" onClick={() => {
                 handleClick();
@@ -96,7 +104,13 @@ function Nav() {
               </div>
               <Textarea id="password" type="password" required={true} />
             </div>
-            
+
+            <div className="icons-container">
+            <a href='https://www.instagram.com/eelx001/'><BsInstagram className='Icon'/></a>
+            <a href='https://wa.me/212675275835'><BsWhatsapp className='Icon'/></a>
+            <a href='https://www.linkedin.com/in/mehdi-joumad/'><BsLinkedin className='Icon'/></a>
+            </div>
+
             <div className="w-full">
               <Button className='bn3637 bn37 mn' as={Link} to="/dashboard">Envoyer!</Button>
             </div>

@@ -1,0 +1,29 @@
+.timeline-container{
+    color: white !important;
+    margin: 50px;  
+  }
+.time-time{
+    color: #FFDE59;
+    font-size: 30px;
+    font-weight: 340;
+    
+}
+.time-title{
+    color: white;
+    font-size: 25px;
+    padding-top:15px;
+    font-weight: 700;
+}
+.time-paragraph{
+    color:#dfdfdf;
+    padding-top:15px;
+}
+ol, ul, menu{
+    padding: 10px;
+}
+.formation{
+padding-bottom: 20px;
+color: white;
+font-size: 100px;
+font-weight: 100;
+}
