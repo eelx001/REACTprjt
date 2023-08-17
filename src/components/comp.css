@@ -1,4 +1,130 @@
+body{
+  overflow-x: hidden !important;
+}
+.skillcar:hover{
+
+  background-color: aqua;
+
+}
+/*###########################################################################################*/
+
+
+
+
+
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  color:rgb(255, 255, 255);
+}
+
+.each {
+  text-align: center;
+  background: #000000;
+  height: 190px;
+  width: 190px;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid #eaeef5;
+}
+
+
+.each .box {
+  padding: 16px;
+}
+
+.css .box {
+  text-align: center;
+}
+
+
+
+
+.ng .box {
+  text-align: center;
+}
+
+.each .box .content h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.each .box .content p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.html .box .content i {
+  margin-top: 40px;
+}
+
+.css .box .content i {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.js .box .content i {
+  margin-bottom: 20px;
+}
+
+.ng .box .content i {
+  margin-bottom: 20px;
+}
+
+.each .box .content i {
+  font-size: 30px;
+}
+
+.center {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  background: #000000;
+  color:#FFDE59;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-radius: 108px;
+  border: 10px solid #e8edf5;
+}
+
+.center .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*###########################################################################################*/
+.skill-cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .skill-cont {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  .skill-cont > * {
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+}
+
 .MyName{
+  cursor: pointer;
   text-align: center;
   color: White;
   font-size: 15vh;
@@ -19,7 +145,7 @@
 }
 .pcards-header{
   padding-top: 150px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   color: white;
   font-size: 70px;
   font-weight: 100;

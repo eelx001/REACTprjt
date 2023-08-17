@@ -32,20 +32,27 @@ function Nav() {
   
 
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, scale: 1 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{
+      duration: 0.4,
+      delay: 0.5,
+    }}
+    >
       <nav className="navba dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
    
           <Link to="/home" className="flex items-center">
             <motion.img    
-            
-            
+            whileHover={{scale:0.8}}
+            whileTap={{scale:1.5}}
             src={Logo} className="h-12 mr-3" alt="Spotify" />
           </Link>
           <div className="flex md:order-2">
          
-          <button type="button" className="bn3637 bn37 no-outline" onClick={handleClick}>Contact Me</button>
+          <motion.button  type="button" className="bn3637 bn37 no-outline" onClick={handleClick}>Contact Me</motion.button>
        
             <button
               ref={dropdownRef}
@@ -63,18 +70,27 @@ function Nav() {
           </div>
           <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isOpen ? 'block' : 'hidden'}`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
+              <motion.li 
+              whileHover={{scale:1}}
+              whileTap={{scale:1.4}}
+              >
                 <Link to="/home" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Accueil</Link>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+              whileHover={{scale:1}}
+              whileTap={{scale:1.5}}
+              >
                 <Link to="/project" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</Link>
-              </li>
+              </motion.li>
               {/* <li>
                 <Link to="/page2" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Moi</Link>
               </li> */}
-              <li>
+              <motion.li
+               whileHover={{scale:1}}
+               whileTap={{scale:1.5}}
+              >
                 <Link to="/alt" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
-              </li>             
+              </motion.li>             
               <button type="button" className="btndrop bndp" onClick={() => {
                 handleClick();
                 hideDropdown();
@@ -118,7 +134,7 @@ function Nav() {
           </div>
         </Modal.Body>
       </Modal>
-    </div>
+    </motion.div>
   );
 }
 

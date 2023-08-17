@@ -24,6 +24,18 @@ ol, ul, menu{
 .formation{
 padding-bottom: 20px;
 color: white;
-font-size: 100px;
+font-size: 10vh;
 font-weight: 100;
+}
+.exper{
+    padding-bottom: 20px;
+    color: white;
+    font-size: 7vh;
+    font-weight: 100;
+    display: flex;
+    
+}
+.damnstars {
+    padding-left: 5px;
+    padding-top: 5px;
 }
