@@ -2,12 +2,14 @@
 import React from 'react';
 import { Timeline } from 'flowbite-react';
 import { HiCalendar } from 'react-icons/hi'
+import {FaReact, FaNodeJs} from 'react-icons/fa'
+import {SiCss3 ,SiHtml5,SiJavascript,SiPhp,SiPython,SiTailwindcss,SiMysql,
+        SiMongodb,SiMariadb,SiPostgresql,SiGithub,SiVisualstudiocode,
+        SiPostman,SiFastapi} from 'react-icons/si'
 import {motion} from 'framer-motion'
 import './time.css'
 import { Rating } from 'flowbite-react';
-import { Card } from 'flowbite-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDays } from '@fortawesome/free-regular-svg-icons'
+import Security from './security';
 
 
 
@@ -142,6 +144,8 @@ export default function Time() {
       </Timeline.Item>
       
     </Timeline>
+   
+  
     <div className='timeline-container'>
         
         <h1 className='exper'>Skills
@@ -154,93 +158,243 @@ export default function Time() {
         </Rating>
         </h1>
       <div className="skill-cont">
-          
-      <div class="skills">
-  <div class="each html">
-    <div class="box">
-      <div class="content">
-        <h2>HTML</h2>
-        <p></p>
-        <FontAwesomeIcon icon={faCalendarDays} />
-      </div>
-    </div>
-  </div>
-  <div class="each css">
-    <div class="box">
-      <div class="content">
-        <h2>CSS</h2>
-        <p></p>
-        <FontAwesomeIcon />
-      </div>
-    </div>
-  </div>
-  
-  <div class="each js">
-    <div class="box">
-      <div class="content">
-        <i class="fa-brands fa-js"></i>
-        <h2>JAVASCRIPT</h2>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  <div class="each ng">
-    <div class="box">
-      <div class="content">
-        <i class="fa-brands fa-angular"></i>
-        <h2>ANGULAR</h2>
-        <p></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
 <div class="skills">
+  
   <div class="each html">
     <div class="box">
       <div class="content">
+      <div className='icones-skill'>
         <h2>HTML</h2>
         <p></p>
-        <i class="fa-brands fa-html5"></i>
+        
+        <SiHtml5 className='icone-skill-html'/>
+        </div>
       </div>
     </div>
   </div>
   <div class="each css">
     <div class="box">
-      <div class="content">
+    <div class="content">
+      <div className='icones-skill'>
         <h2>CSS</h2>
-        <p></p> 
-        <FontAwesomeIcon />
+        <p></p>
+        
+        <SiCss3 className='icone-skill-css'/>
+        </div>
       </div>
     </div>
   </div>
   
   <div class="each js">
     <div class="box">
-      <div class="content">
-        <i class="fa-brands fa-js"></i>
-        <h2>JAVASCRIPT</h2>
-        <p></p> 
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>JavaScript</h2>
+        <p></p>
+        
+        <SiJavascript className='icone-skill-js'/>
+        </div>
       </div>
     </div>
   </div>
   <div class="each ng">
     <div class="box">
-      <div class="content">
-        <i class="fa-brands fa-angular"></i>
-        <h2>ANGULAR</h2>
-        <p></p> 
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>ReactJs</h2>
+        <p></p>
+        
+        <FaReact className='icone-skill-react'/>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
-          </div>
+
+{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+
+
+<div className="skill-cont">
+<div class="skills">
+  
+  <div class="each html">
+    <div class="box">
+      <div class="content">
+      <div className='icones-skill'>
+        <h2>NodeJs</h2>
+        <p></p>
         
-      
+        <FaNodeJs className='icone-skill-nodejs'/>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="each css">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>Python</h2>
+        <p></p>
+        
+        <SiPython className='icone-skill-python'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="each js">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>PHP</h2>
+        <p></p>
+        
+        <SiPhp className='icone-skill-php'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="each ng">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>REST-API</h2>
+        <p></p>
+        
+        <SiFastapi className='icone-skill-tail'/>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+     
+    <div className='timeline-container'>
+        
+        <h1 className='exper'>Databases & Tools:</h1>
+      <div className="skill-cont">
+<div class="skills">
+  
+  <div class="each html">
+    <div class="box">
+      <div class="content">
+      <div className='icones-skill'>
+        <h2>MySql</h2>
+        <p></p>
+        
+        <SiMysql className='icone-skill-mysql'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="each css">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>MongoDB</h2>
+        <p></p>
+        
+        <SiMongodb className='icone-skill-mongo'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="each js">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>MariaDB</h2>
+        <p></p>
+        
+        <SiMariadb className='icone-skill-maria'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="each ng">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>PostgreSql</h2>
+        <p></p>
+        
+        <SiPostgresql className='icone-skill-postgres'/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+
+
+<div className="skill-cont">
+<div class="skills">
+  
+  <div class="each html">
+    <div class="box">
+      <div class="content">
+      <div className='icones-skill'>
+        <h2>Github/Git</h2>
+        <p></p>
+        
+        <SiGithub className='icone-skill-github'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="each css">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>VsCode</h2>
+        <p></p>
+        
+        <SiVisualstudiocode className='icone-skill-vscode'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="each js">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>Postman</h2>
+        <p></p>
+        
+        <SiPostman className='icone-skill-postman'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* <div class="each js">
+    <div class="box">
+    <div class="content">
+      <div className='icones-skill'>
+        <h2>Postman</h2>
+        <p></p>
+        
+        <SiPostman className='icone-skill-postman'/>
+        </div>
+      </div>
+    </div>
+  </div> */}
+  
+    </div>
+    </div>
+    </div>
+    </div>
+    
+<Security/>
+  
     </motion.div>
   )
 }

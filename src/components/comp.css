@@ -8,15 +8,92 @@ body{
 }
 /*###########################################################################################*/
 
+.icone-skill-html{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #E96228;
+}.icone-skill-css{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #254BDD;
+}.icone-skill-js{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #facb0d;
+}.icone-skill-react{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #61DBFB;
+}.icone-skill-nodejs{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #6CB64D;
+}.icone-skill-php{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #7377AD;
+}.icone-skill-python{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #6d86b5;
+}.icone-skill-tail{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #07B0CE;
+}
 
 
+
+.icone-skill-mysql{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #f89a03;
+}.icone-skill-mongo{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #4EAD3E;
+}.icone-skill-maria{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #BA7257;
+}.icone-skill-postgres{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #31648C;
+}.icone-skill-github{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+}.icone-skill-vscode{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #3994CF;
+}.icone-skill-postman{
+  font-size:90px;
+  text-align: center !important;
+  padding-left:20px;
+  color: #F76935;
+}
 
 
 
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 400px;
+  width: 0px;
   gap: 20px;
   position: relative;
   justify-content: center;
@@ -28,8 +105,8 @@ body{
 .each {
   text-align: center;
   background: #000000;
-  height: 190px;
-  width: 190px;
+  height: 170px;
+  width: 170px;
   border-radius: 30px;
   font-family: Arial, Helvetica, sans-serif;
   border: 5px solid #eaeef5;
@@ -37,24 +114,15 @@ body{
 
 
 .each .box {
-  padding: 16px;
-}
-
-.css .box {
+  padding: 25px;
   text-align: center;
 }
 
-
-
-
-.ng .box {
-  text-align: center;
-}
 
 .each .box .content h2 {
   font-size: 20px;
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 .each .box .content p {
@@ -62,27 +130,6 @@ body{
   margin: 0;
 }
 
-.html .box .content i {
-  margin-top: 40px;
-}
-
-.css .box .content i {
-  font-size: 30px;
-  margin-left: 100px;
-  margin-top: 40px;
-}
-
-.js .box .content i {
-  margin-bottom: 20px;
-}
-
-.ng .box .content i {
-  margin-bottom: 20px;
-}
-
-.each .box .content i {
-  font-size: 30px;
-}
 
 .center {
   position: absolute;
@@ -105,11 +152,15 @@ body{
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+#root > div > div.cont > div > div:nth-child(5) > div > li {
+  font-size: 20px;
+  font-weight: 100;
+}
 
 /*###########################################################################################*/
 .skill-cont {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* Responsive adjustments for smaller screens */
