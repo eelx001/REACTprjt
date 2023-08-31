@@ -7,6 +7,7 @@ import Page3 from './components/page3'
 function App() {
   return (
         <div className="App" >
+        
         <Nav/>
         
         <Routes>

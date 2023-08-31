@@ -46,8 +46,7 @@ function Nav() {
    
           <Link to="/home" className="flex items-center">
             <motion.img    
-            whileHover={{scale:0.8}}
-            whileTap={{scale:1.5}}
+            whileTap={{scale:1.3}}
             src={Logo} className="h-12 mr-3" alt="Spotify" />
           </Link>
           <div className="flex md:order-2">
@@ -71,13 +70,12 @@ function Nav() {
           <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isOpen ? 'block' : 'hidden'}`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <motion.li 
-              whileHover={{scale:1}}
+              
               whileTap={{scale:1.4}}
               >
                 <Link to="/home" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Accueil</Link>
               </motion.li>
               <motion.li
-              whileHover={{scale:1}}
               whileTap={{scale:1.5}}
               >
                 <Link to="/project" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</Link>
@@ -86,7 +84,6 @@ function Nav() {
                 <Link to="/page2" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Moi</Link>
               </li> */}
               <motion.li
-               whileHover={{scale:1}}
                whileTap={{scale:1.5}}
               >
                 <Link to="/alt" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>

@@ -1,28 +1,28 @@
-import React from "react"
-import {motion} from 'framer-motion'
-
-
-
-
-
-
-
+import React from "react";
+import { motion } from 'framer-motion';
+import Rectangle from './rectangle.svg';
 
 
 export default function Indicators() {
   return (
-    <>
-        <motion.h1     
+    <div className="background-container">
+      <div       
+     
+      className="background" />
+      <motion.h1
+
         whileHover={{ scale: 1.0 }}
         whileTap={{ scale: 0.8 }}
         animate={{
-          x:-10,duration:1,
+          x: -10,
+          duration: 10,
           scale: 1,
           rotate: 360,
-        }}       
-        className="MyName">Hello My name is Mehdi!</motion.h1>
-    </>
-  )
+        }}
+        className="MyName"
+      >
+        I forgot to put something here xD
+      </motion.h1>
+    </div>
+  );
 }
-
-

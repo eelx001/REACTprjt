@@ -3,7 +3,7 @@ import React from 'react';
 import { Timeline } from 'flowbite-react';
 import { HiCalendar } from 'react-icons/hi'
 import {FaReact, FaNodeJs} from 'react-icons/fa'
-import {SiCss3 ,SiHtml5,SiJavascript,SiPhp,SiPython,SiTailwindcss,SiMysql,
+import {SiCss3 ,SiHtml5,SiJavascript,SiPhp,SiPython,SiMysql,
         SiMongodb,SiMariadb,SiPostgresql,SiGithub,SiVisualstudiocode,
         SiPostman,SiFastapi} from 'react-icons/si'
 import {motion} from 'framer-motion'
@@ -11,14 +11,11 @@ import './time.css'
 import { Rating } from 'flowbite-react';
 import Security from './security';
 
-
-
-
 export default function Time() {
-
 
   return (
     <motion.div 
+    
     >
     <Timeline className='timeline-container'>
         
@@ -29,15 +26,14 @@ export default function Time() {
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
           <Timeline.Time className='time-time'>
-            2023/2024
+            2022/2023
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-            Application UI code in Tailwind CSS
+          Technician diploma specialized in development
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-              Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.
+            
             </p>
           </Timeline.Body>
           
@@ -50,14 +46,11 @@ export default function Time() {
             2022/2023
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-            Application UI
+          Technician diploma specialized in development
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-              Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.
+           
             </p>
           </Timeline.Body>
           
@@ -70,11 +63,11 @@ export default function Time() {
             2020/2021
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-          diploma specialized in development
+          Bachelor of Life and Earth Sciences
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-            informatique. ITSUP Casablanca
+          
              </p>
           </Timeline.Body>
           
@@ -144,35 +137,47 @@ export default function Time() {
       </Timeline.Item>
       
     </Timeline>
-   
+  
   
     <div className='timeline-container'>
         
         <h1 className='exper'>Skills
         <Rating className='damnstars'>
-        <Rating.Star />
+        <Rating.Star/>
         <Rating.Star />
         <Rating.Star />
         <Rating.Star />
         <Rating.Star />
         </Rating>
         </h1>
-      <div className="skill-cont">
-<div class="skills">
+      <div className="skill-cont" >
+<motion.div class="skills" >
   
-  <div class="each html">
+  <motion.div class="each html"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.6,
+  rotate: 15, }}
+
+
+  >
     <div class="box">
-      <div class="content">
+      <div class="content" >
       <div className='icones-skill'>
         <h2>HTML</h2>
         <p></p>
-        
-        <SiHtml5 className='icone-skill-html'/>
+        <div >
+        <SiHtml5  className='icone-skill-html'/>
+        </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="each css">
+  </motion.div>
+  <motion.div class="each css"
+
+   whileHover={{ scale:0.8}}
+   whileTap={{ scale: 0.7,
+   rotate: -15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -183,9 +188,14 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   
-  <div class="each js">
+  <motion.div class="each js"
+  
+   whileHover={{ scale:0.8}}
+   whileTap={{ scale: 0.7,
+   rotate: -15, }}
+   >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -196,21 +206,30 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each ng">
-    <div class="box">
+  </motion.div>
+  <div class="each ng"
+  
+  
+  >
+    <div class="box"
+    
+    >
     <div class="content">
-      <div className='icones-skill'>
+      <motion.div className='icones-skill'
+      whileHover={{ scale:0.8}}
+      whileTap={{ scale: 0.7,
+      rotate: 15, }}
+      >
         <h2>ReactJs</h2>
         <p></p>
         
         <FaReact className='icone-skill-react'/>
-        </div>
+        </motion.div>
       </div>
     </div>
   </div>
 
-</div>
+</motion.div>
 
 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 
@@ -218,7 +237,11 @@ export default function Time() {
 <div className="skill-cont">
 <div class="skills">
   
-  <div class="each html">
+  <motion.div class="each html"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: -15, }}
+  >
     <div class="box">
       <div class="content">
       <div className='icones-skill'>
@@ -229,8 +252,12 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each css">
+  </motion.div>
+  <motion.div class="each css"
+   whileHover={{ scale:0.8}}
+   whileTap={{ scale: 0.7,
+   rotate: 15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -241,9 +268,13 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   
-  <div class="each js">
+  <motion.div class="each js"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: 15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -254,8 +285,12 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each ng">
+  </motion.div>
+  <motion.div class="each ng"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: 15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -266,7 +301,7 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
     </div>
     </div>
     </div>
@@ -280,7 +315,11 @@ export default function Time() {
       <div className="skill-cont">
 <div class="skills">
   
-  <div class="each html">
+  <motion.div class="each html"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: 15, }}
+  >
     <div class="box">
       <div class="content">
       <div className='icones-skill'>
@@ -291,8 +330,12 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each css">
+  </motion.div>
+  <motion.div class="each css"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: -15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -303,9 +346,13 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   
-  <div class="each js">
+  <motion.div class="each js"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: -15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -316,8 +363,12 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each ng">
+  </motion.div>
+  <motion.div class="each ng"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: 15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -328,7 +379,7 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 
 </div>
 
@@ -338,7 +389,11 @@ export default function Time() {
 <div className="skill-cont">
 <div class="skills">
   
-  <div class="each html">
+  <motion.div class="each html"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: -15, }}
+  >
     <div class="box">
       <div class="content">
       <div className='icones-skill'>
@@ -349,8 +404,12 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
-  <div class="each css">
+  </motion.div>
+  <motion.div class="each css"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: 15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -361,9 +420,13 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   
-  <div class="each js">
+  <motion.div class="each js"
+  whileHover={{ scale:0.8}}
+  whileTap={{ scale: 0.7,
+  rotate: -15, }}
+  >
     <div class="box">
     <div class="content">
       <div className='icones-skill'>
@@ -374,7 +437,7 @@ export default function Time() {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   {/* <div class="each js">
     <div class="box">
     <div class="content">
