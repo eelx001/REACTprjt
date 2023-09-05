@@ -14,7 +14,7 @@ function App() {
         <Route path="*" element={<Navigate to="/home" />} />
         <Route path="/home"  Component={Page1}/>
         <Route path="/project"  Component={Page2}/>
-        <Route path="/alt"  Component={Page3}/>
+        <Route path="/comments"  Component={Page3}/>
         </Routes>
         
     </div>

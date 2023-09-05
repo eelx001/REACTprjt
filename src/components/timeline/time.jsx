@@ -19,17 +19,17 @@ export default function Time() {
     >
     <Timeline className='timeline-container'>
         
-        <h1 className='formation'>Training</h1>
+        <h1 className='formation'>Diploma</h1>
 
         
         <Timeline.Item>
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
           <Timeline.Time className='time-time'>
-            2022/2023
+            2023/2024
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-          Technician diploma specialized in development
+          Professional License in Web Development (in progress...)
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
@@ -46,7 +46,7 @@ export default function Time() {
             2022/2023
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-          Technician diploma specialized in development
+          Specialized Technician Diploma in Web Development (Full-stack)
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
@@ -84,15 +84,15 @@ export default function Time() {
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
           <Timeline.Time className='time-time'>
-            2023/2024
+          Apr2023 - Aug2023 · 5 mos
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-            Application UI code in Tailwind CSS
+          Oumnia Agency of Orientation · Internship
+          
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-              Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.
+            Full-stack Developer
             </p>
           </Timeline.Body>
           
@@ -102,17 +102,14 @@ export default function Time() {
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
           <Timeline.Time className='time-time'>
-            2022/2023
+          Jan2023 - Mar2023 · 3 mos
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-            Application UI
+          Freelance
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-              Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-              E-commerce & Marketing pages.
+            Web Application Developer
             </p>
           </Timeline.Body>
           
@@ -122,20 +119,37 @@ export default function Time() {
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
           <Timeline.Time className='time-time'>
-            2020/2021
+          Jul2022 - Oct2022 · 4 mos
           </Timeline.Time>
           <Timeline.Title className='time-title'>
-          diploma specialized in development
+          Maroc Industry parts · Freelance
           </Timeline.Title>
           <Timeline.Body>
             <p className='time-paragraph'>
-            informatique. ITSUP Casablanca
+            Web Developer
              </p>
           </Timeline.Body>
           
         </Timeline.Content>
       </Timeline.Item>
-      
+      <Timeline.Item>
+        <Timeline.Point icon={HiCalendar} />
+        <Timeline.Content>
+          <Timeline.Time className='time-time'>
+          Apr2022 - Jun2022 · 3 mos
+          </Timeline.Time>
+          <Timeline.Title className='time-title'>
+          Will & Win Agency · Internship
+          </Timeline.Title>
+          <Timeline.Body>
+            <p className='time-paragraph'>
+            Full-stack Developer
+            Casablanca-Settat, Morocco · On-site
+             </p>
+          </Timeline.Body>
+          
+        </Timeline.Content>
+      </Timeline.Item>
     </Timeline>
   
   

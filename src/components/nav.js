@@ -86,7 +86,7 @@ function Nav() {
               <motion.li
                whileTap={{scale:1.5}}
               >
-                <Link to="/alt" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
+                <Link to="/comments" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
               </motion.li>             
               <button type="button" className="btndrop bndp" onClick={() => {
                 handleClick();

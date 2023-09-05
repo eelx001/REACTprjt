@@ -14,7 +14,7 @@ function page2() {
       delay: 0.5,
     }}
       >
-    <motion.h1 animate={{x:-10,scale:1}}  className='pcards-header'>My Projects</motion.h1>
+    <motion.h1 animate={{x:-10,scale:1}}  className='pcards-header'>👾Projects</motion.h1>
     
     <Pcards/>
     </motion.div>
