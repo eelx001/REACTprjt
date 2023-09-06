@@ -231,9 +231,10 @@ body{
 .writecomm{
   color: white;
   display: flex;
-  align-items: center;
   padding-bottom: 60px;
-  gap:15px;
+  gap: 15px;
+  align-items: flex-end;
+  flex-direction: column;;
 }
 
 .pcomm-header{
@@ -244,25 +245,9 @@ body{
   font-weight: 700;
   text-align: center;
 }
-.incomm{
-
+.button009{
+  background-color: #EFD054;
+  color: #000000;
 }
 
-.buttsen {
-  color: #ffffff;
-  background-color: #fff34900;
-  border: 1px solid #fcff47;
-  border-radius: 4px;
-  padding: 0 15px;
-  cursor: pointer;
-  height: 32px;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 1px 1px #ffffff, 2px 2px #ffffff, 3px 3px #ffffff;
-  transform: translateX(-3px);
-}
-.buttsen:hover {
- box-shadow: 1px 1px #ebff36, 2px 2px #f1ff2d, 3px 3px #ebff39;
- transform: translateX(-3px);
-}
 

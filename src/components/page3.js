@@ -2,7 +2,7 @@
 
 import { Card } from 'flowbite-react';
 import './comp.css'
-import { Label, TextInput } from 'flowbite-react';
+import {  TextInput } from 'flowbite-react';
 import {motion} from 'framer-motion'
 
 
@@ -11,13 +11,21 @@ export default function DefaultCard() {
     <div className='divcomm'>
           <motion.h1 animate={{rotate:360,scale:1}}  className='pcomm-header'>Leave a comment 👋🏻</motion.h1>
           <div className='writecomm'>
+          <TextInput
+          className='incomm'
+          id="large"
+          sizing="lg"
+          type="text"
+          placeholder="Your Name"
+        />
         <TextInput
           className='incomm'
           id="large"
           sizing="lg"
           type="text"
+          placeholder="Comment.."
         />
-       <button className='buttsen'>Shadow</button >
+       <button type="button" className="button-50 button009" >Send!</button>
         </div>
 
 
