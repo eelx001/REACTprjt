@@ -2,4 +2,5 @@
 -  ReactJs
 -  API
 -  NodeJs
--  MongoDB  
+-  MongoDB
+# HOSTED ON Netlify
