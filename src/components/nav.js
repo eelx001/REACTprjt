@@ -73,12 +73,12 @@ function Nav() {
               
               whileTap={{scale:1.4}}
               >
-                <Link to="/home" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Accueil</Link>
+                <Link to="/home" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</Link>
               </motion.li>
               <motion.li
               whileTap={{scale:1.5}}
               >
-                <Link to="/project" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</Link>
+                <Link to="/project" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</Link>
               </motion.li>
               {/* <li>
                 <Link to="/page2" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Moi</Link>
@@ -86,7 +86,7 @@ function Nav() {
               <motion.li
                whileTap={{scale:1.5}}
               >
-                <Link to="/comments" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Choses aléatoires</Link>
+                <Link to="/comments" onClick={hideDropdown} className="aa block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white  dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Comments</Link>
               </motion.li>             
               <button type="button" className="btndrop bndp" onClick={() => {
                 handleClick();
