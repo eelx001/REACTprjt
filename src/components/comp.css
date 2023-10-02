@@ -190,7 +190,10 @@ body{
   display: flex;
   align-items: center; 
 }
-
+.bsgit{
+  font-size: 30px;
+  color: black;
+}
 .Icon {
   font-size: 24px; 
   margin-right: 10px;

@@ -39,7 +39,9 @@ body, html {
 .cont{
   padding-top: 10%;
 }
-
+img, video{
+  height: 130px;
+}
 .cards-container {
   display: flex;
   flex-wrap: wrap;
