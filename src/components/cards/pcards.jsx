@@ -47,7 +47,7 @@ function pcards() {
     
     <p className="font-normal text-gray-700 dark:text-gray-400">
       
-    <a href="https://wonderful-panda-0c267a.netlify.app/" target='_'><button type="button" className="button-50" ><HiArrowCircleRight/>&nbsp;Check it!</button></a>
+    <a href=""><button type="button" className="button-50" ><HiArrowCircleRight/>&nbsp;Check it!</button></a>
     <a href="https://github.com/eelx001/REACTprjt" target='_' className='bsgit'><BsGithub/></a>
     
     </p>
