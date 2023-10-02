@@ -44,22 +44,6 @@ export default function DefaultCard() {
     //     </p>
     //   </p>
     // </Card>
-    // <Card
-    //   className="max-w-sm comments"
-      
-    // >
-    //   <h5 className="text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-    //     <p>
-    //       GUEST..
-    //     </p>
-    //   </h5>
-    //   <p className="font-normal text-white-700 dark:text-white-400">
-    //     <p>
-    //     e the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the biggee the bigge
-    //        </p>
-    //   </p>
-    // </Card>
-    </div>
   )
 }
 
