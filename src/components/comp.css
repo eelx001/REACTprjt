@@ -223,6 +223,7 @@ body{
   margin:15px;
   user-select: none;
   border: 0px;
+  border-radius: 0px 50px 50px 50px;
 }
 .comments:hover{
   background-color: #0F0F0F !important;
